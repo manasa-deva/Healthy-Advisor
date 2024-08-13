@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            position: relative;
+            background-image: url('vegys.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the background image */
+            height: 400px; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-text {
+            background-color: white;
+            border: 5px solid navy; /* Broader navy blue border */
+            padding: 30px; /* Increased padding for a more spacious look */
+            max-width: 600px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for more depth */
+            text-align: left;
+            position: relative; /* Ensure the text box is positioned relative to the parent */
+            z-index: 1; /* Ensure text box appears above the background image */
+        }
+
+        .about-text p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Advisor</h1>
+    <img src="DM.png" alt="Logo" class="logo">
+</header>
+
+<nav>
+    <a href="#about" onclick="showPage('about')">About</a>
+    <a href="#chatbot" onclick="showPage('chatbot')">Chatbot</a>
+    <a href="#blog" onclick="showPage('blog')">Blog</a>
+    <a href="#contact" onclick="showPage('contact')">Contact</a>
+</nav>
+
+<div class="content active" id="about">
+    <h2>About</h2>
+    <div class="about-section">
+        <div class="about-text">
+            <p><strong>Healthy Food:</strong><br>
+               Healthy food consists of nutrient-rich options like fruits, vegetables, whole grains, lean proteins, and healthy fats that provide essential vitamins, minerals, and energy needed for the body to function properly. Eating a balanced diet of healthy foods supports overall well-being, boosts the immune system, and reduces the risk of chronic diseases such as heart disease, diabetes, and obesity.</p>
+            
+            <p><strong>Health Care:</strong><br>
+               Health care refers to the organized provision of medical services to maintain and improve an individual's health. It includes preventive measures, diagnosis, treatment, and management of illness and injuries. Regular check-ups, vaccinations, healthy lifestyle choices, and access to medical professionals are all integral parts of effective health care, which helps ensure long-term physical and mental health.</p>
+        </div>
+    </div>
+</div>
+
+<div class="content" id="chatbot">
+    <h2>Chatbot</h2>
+    <iframe
+        src="https://www.chatbase.co/chatbot-iframe/6YTNZsVesKn4yxwJyxcEB"
+        width="100%"
+        style="height: 600px; border: none;"
+    ></iframe>
+</div>
+
+<div class="content" id="blog">
+    <h2>Blog</h2>
+    <h3>The Benefits of Healthy Food and Health Care</h3>
+    <p>Healthy food and health care are crucial components of a balanced lifestyle. Incorporating nutritious foods into your diet and maintaining good health practices can enhance your overall well-being.</p>
+
+    <h4>Uses of Healthy Food</h4>
+    <p>Healthy food provides essential nutrients that our bodies need to function optimally. It supports:
+        <ul>
+            <li><strong>Energy Levels:</strong> Whole grains, fruits, and vegetables provide sustained energy.</li>
+            <li><strong>Immune System:</strong> Foods rich in vitamins and minerals help strengthen the immune system.</li>
+            <li><strong>Brain Function:</strong> Omega-3 fatty acids and antioxidants support cognitive function and mental clarity.</li>
+        </ul>
+    </p>
+
+    <h4>Maintenance of a Healthy Diet</h4>
+    <p>To maintain a healthy diet, consider these tips:
+        <ul>
+            <li><strong>Plan Meals:</strong> Prepare a weekly meal plan to ensure balanced nutrition.</li>
+            <li><strong>Portion Control:</strong> Be mindful of portion sizes to avoid overeating.</li>
+            <li><strong>Stay Hydrated:</strong> Drink plenty of water throughout the day.</li>
+        </ul>
+    </p>
+
+    <h4>Pros of Healthy Food</h4>
+    <p>Choosing healthy food has numerous benefits:
+        <ul>
+            <li><strong>Improved Digestion:</strong> Fiber-rich foods promote digestive health.</li>
+            <li><strong>Weight Management:</strong> Nutrient-dense foods help in maintaining a healthy weight.</li>
+            <li><strong>Long-Term Health:</strong> A balanced diet reduces the risk of chronic diseases such as heart disease and diabetes.</li>
+        </ul>
+    </p>
+
+    <h4>Funny Tips</h4>
+    <p>Here are some humorous tips to keep your healthy eating journey fun:
+        <ul>
+            <li>Eat your greens and your mean streak might just turn into a lean streak!</li>
+            <li>Instead of saying "I can't eat that," say "I choose not to eat that!"—it's all in the mindset.</li>
+            <li>Have a "happy dance" every time you eat something healthy. Your body and your mood will thank you!</li>
+        </ul>
+    </p>
+
+    <h4>Funny Questions with Hidden Answers</h4>
+    <p>Think you know it all about healthy food? Test yourself with these funny questions:</p>
+    
+    <div class="hidden-answer">
+        <p>Q1: Why did the tomato turn red?</p>
+        <button onclick="toggleAnswer('answer1')">Show Answer</button>
+        <p id="answer1" style="display:none;">A1: Because it saw the salad dressing!</p>
+    </div>
+
+    <div class="hidden-answer">
+        <p>Q2: What do you call an avocado that is always on time?</p>
+        <button onclick="toggleAnswer('answer2')">Show Answer</button>
+        <p id="answer2" style="display:none;">A2: A guac-a-mole!</p>
+    </div>
+
+    <div class="hidden-answer">
+        <p>Q3: Why don’t eggs tell jokes?</p>
+        <button onclick="toggleAnswer('answer3')">Show Answer</button>
+        <p id="answer3" style="display:none;">A3: Because they might crack up!</p>
+    </div>
+</div>
+
+<div class="content" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have any questions? Reach out to us at: <a href="mailto:manasadeva134@gmail.com">manasadeva134@gmail.com</a></p>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <img src="DM.png" alt="Footer Logo" class="footer-logo">
+        <button onclick="toggleFeedbackForm()" class="feedback-button">Feedback</button>
+    </div>
+    
+    <div id="feedback-form" style="display: none;">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Send Feedback">
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <p>&copy; Health Advisor By md</p>
+</footer>
+
+<script>
+    function showPage(page) {
+        const pages = document.querySelectorAll('.content');
+        pages.forEach(p => p.classList.remove('active'));
+        document.getElementById(page).classList.add('active');
+    }
+
+    function toggleAnswer(answerId) {
+        const answer = document.getElementById(answerId);
+        if (answer.style.display === "none") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+    }
+
+    function toggleFeedbackForm() {
+        const form = document.getElementById('feedback-form');
+        if (form.style.display === 'none') {
+            form.style.display = 'block';
+        } else {
+            form.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
